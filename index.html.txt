@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>La Riconquista - Guida Completa per Tornare con la tua Ex</title>
+  <style>
+    /* Reset e stili base */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: #f0f4f8;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #0056b3;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0056b3;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #ffcc00;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    /* Immagini create in CSS (placeholder) */
+    .img-placeholder {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, #0056b3 0%, #ffcc00 100%);
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 1.5rem;
+      user-select: none;
+    }
+
+    /* Sezione Carrello */
+    form {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+      color: #333;
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      background: #0056b3;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      width: 100%;
+    }
+    button:hover {
+      background: #003d80;
+    }
+    /* FAQ */
+    .faq-item {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 1rem;
+    }
+    .faq-question {
+      font-weight: 700;
+      cursor: pointer;
+      color: #0056b3;
+    }
+    .faq-answer {
+      display: none;
+      margin-top: 0.5rem;
+      color: #444;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: #222;
+      color: #eee;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav a {
+        margin-left: 0;
+        margin-right: 1rem;
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>La Riconquista</h1>
+    <nav>
+      <a href="#intro">Chi Siamo</a>
+      <a href="#guide">La Guida</a>
+      <a href="#carrello">Acquista</a>
+      <a href="#faq">Domande</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Introduzione -->
+    <section id="intro" aria-label="Chi siamo">
+      <h2>Chi Siamo</h2>
+      <div class="img-placeholder" aria-hidden="true">Immagine Logo La Riconquista</div>
+      <p>
+        Benvenuto su <strong>La Riconquista</strong>, il punto di riferimento serio e professionale per chi desidera tornare con la propria ex senza commettere gli errori più comuni. 
+      </p>
+      <p>
+        Sono il Sig. Massimiliano Mazzei, con anni di ricerca e studio approfondito nel settore delle relazioni sentimentali e della psicologia della riconquista. La nostra missione è aiutarti a riprendere il controllo della tua vita amorosa, con strumenti concreti e comprovati, evitando le trappole della sofferenza e della disperazione.
+      </p>
+      <p>
+        Questa guida è pensata per chi vuole un percorso chiaro, scientifico e passo passo per capire, agire e finalmente riconquistare chi ama, oppure chiudere in modo consapevole quando è il momento.
+      </p>
+    </section>
+
+    <!-- Guida completa -->
+    <section id="guide" aria-label="Descrizione della guida completa">
+      <h2>La Guida Completa</h2>
+      <div class="img-placeholder" aria-hidden="true">Copertina PDF La Riconquista</div>
+      <p>
+        Il nostro prodotto principale è un PDF guida di oltre 100 pagine, che ti accompagna dalla comprensione della rottura fino al momento decisivo di tornare insieme o lasciar andare. 
+      </p>
+      <p>
+        La guida è suddivisa in 6 parti fondamentali:
+      </p>
+      <ul>
+        <li><strong>Comprendere la rottura:</strong> psicologia, tipi di rottura, distacco emotivo.</li>
+        <li><strong>Reset completo – No Contact:</strong> perché funziona e come applicarlo.</li>
+        <li><strong>Ricostruzione del sé:</strong> autostima, mente, corpo e socialità.</li>
+        <li><strong>Il primo contatto:</strong> come e quando riavvicinarsi.</li>
+        <li><strong>Re-ingaggio e test psicologici:</strong> mantenere potere e rispetto.</li>
+        <li><strong>Fase finale:</strong> chiudere o ripartire con basi sane.</li>
+      </ul>
+      <p>
+        All’interno troverai spiegazioni chiare, errori da evitare, consigli pratici e domande di riflessione, tutto studiato per farti ottenere risultati reali.
+      </p>
+    </section>
+
+    <!-- Acquisto -->
+    <section id="carrello" aria-label="Acquisto PDF La Riconquista">
+      <h2>Acquista il PDF "La Riconquista"</h2>
+      <p>Prezzo: <strong>3,99 €</strong></p>
+      <p>Compila i dati qui sotto per acquistare. Dopo il pagamento via PayPal riceverai automaticamente il PDF via email.</p>
+      <form id="orderForm">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required autocomplete="given-name" />
+        
+        <label for="cognome">Cognome</label>
+        <input type="text" id="cognome" name="cognome" required autocomplete="family-name" />
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email" />
+        
+        <button type="submit">Procedi al Pagamento</button>
+      </form>
+      <p id="statusMessage" style="color:green; margin-top:1rem;"></p>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" aria-label="Domande frequenti">
+      <h2>Domande Frequenti</h2>
+      <div class="faq-item">
+        <div class="faq-question" tabindex="0">Come funziona il pagamento?</div>
+        <div class="faq-answer">
+          Il pagamento avviene tramite PayPal, usando l’email massipazzi93@hotmail.it. Dopo aver compilato il modulo e completato il pagamento, riceverai automaticamente il PDF alla tua email.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" tabindex="0">Quanto tempo ci vuole per ricevere il PDF?</div>
+        <div class="faq-answer">
+          Il PDF viene inviato entro pochi minuti dal completamento del pagamento. Controlla anche la cartella spam o promozioni.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" tabindex="0">Posso fare domande personalizzate?</div>
+        <div class="faq-answer">
+          Certamente! Puoi inviare le tue domande tramite il form dedicato e riceverai una risposta via email. Le tue richieste arriveranno alla nostra email privata (non visibile agli utenti): francobollopazzi93@gmail.com
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 La Riconquista – Sig. Massimiliano Mazzei – Tutti i diritti riservati
+  </footer>
+
+  <script>
+    // FAQ toggle
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const answer = q.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+      q.addEventListener('keypress', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          q.click();
+        }
+      });
+    });
+
+    // Gestione form e integrazione PayPal (mockup)
+    const form = document.getElementById('orderForm');
+    const statusMessage = document.getElementById('statusMessage');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nome = form.nome.value.trim();
+      const cognome = form.cognome.value.trim();
+      const email = form.email.value.trim();
+
+      if (!nome || !cognome || !email) {
+        alert('Compila tutti i campi correttamente.');
+        return;
+      }
+
+      // Simulazione processo pagamento PayPal
+      statusMessage.textContent = "Reindirizzamento a PayPal...";
+      
+      // Qui dovresti inserire l'integrazione PayPal reale tramite API o checkout PayPal
+      // Per esempio: redirezionamento a PayPal con dati ordine, dopo pagamento webhook per invio PDF via email
+
+      // MOCK: dopo 3 secondi conferma ordine
+      setTimeout(() => {
+        statusMessage.textContent = "Pagamento completato! Il PDF verrà inviato a " + email + " a breve.";
+        form.reset();
+
+        // Qui andrebbe la chiamata a backend per inviare il PDF via email
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
