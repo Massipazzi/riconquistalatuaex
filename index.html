@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>La Riconquista – Guida Completa per Tornare con la Tua Ex in Modo Scientifico</title>
+  <title>La Riconquista – Guida Completa per Tornare con la Tua Ex</title>
 
   <!-- SEO Meta Tags -->
   <meta name="description" content="Guida professionale per riconquistare la tua ex. Scarica il PDF 'La Riconquista' e riprendi il controllo della tua vita sentimentale." />
@@ -47,7 +47,7 @@
       flex-wrap: wrap;
     }
     header h1 {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
     nav a {
       color: white;
@@ -82,22 +82,24 @@
       margin-bottom: 1rem;
     }
     ul {
-      margin-left: 1.5rem;
+      margin-left: 1.3rem;
       margin-bottom: 1rem;
     }
-    img.logo, img.copertina {
-      display: block;
-      max-width: 800px;
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    /* Immagini grandi e rettangolari */
+    .image-rect {
       width: 100%;
-      height: 400px;
+      max-height: 300px;
       object-fit: cover;
       border-radius: 10px;
       margin-bottom: 1.5rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: block;
     }
     form {
       max-width: 450px;
-      margin: 0 auto 2rem;
+      margin: 0 auto 1.5rem auto;
     }
     label {
       display: block;
@@ -114,32 +116,12 @@
       border-radius: 5px;
       font-size: 1rem;
     }
-    #paypal-container-EA39S7PZPEUGL {
-      margin-top: 1.5rem;
-      max-width: 450px;
-      margin-left: auto;
-      margin-right: auto;
-    }
     footer {
       text-align: center;
       padding: 1.5rem 1rem;
       background: #222;
       color: #eee;
       font-size: 0.9rem;
-    }
-    .report-problem {
-      text-align: center;
-      font-size: 0.9rem;
-      margin-top: 2rem;
-      color: #444;
-    }
-    .report-problem a {
-      color: #0056b3;
-      text-decoration: none;
-      font-weight: 700;
-    }
-    .report-problem a:hover {
-      text-decoration: underline;
     }
     @media (max-width: 600px) {
       header {
@@ -150,9 +132,6 @@
         margin-left: 0;
         margin-right: 1rem;
         margin-top: 0.5rem;
-      }
-      img.logo, img.copertina {
-        height: 250px;
       }
     }
   </style>
@@ -168,16 +147,21 @@
   </header>
 
   <main>
-    <section id="intro">
+    <section id="intro" aria-label="Chi Siamo">
       <h2>Chi Siamo</h2>
-      <img class="logo" src="https://massipazzi.github.io/riconquistalatuaex/logo-riconquista.png" alt="Logo La Riconquista" />
-      <p>Ciao, sono Carlo Zimbone. Dopo anni di esperienza personale e professionale nello studio delle dinamiche relazionali e della psicologia della riconquista, ho deciso di mettere a disposizione questa guida pratica e senza fronzoli per aiutarti a tornare con la tua ex — o a chiudere definitivamente con consapevolezza.<br>Qui non troverai teorie astratte o promesse vuote, ma un percorso concreto, basato su strategie collaudate e ricerca scientifica, per riprendere il controllo della tua vita amorosa senza perdere tempo o dignità.</p>
+      <img src="https://massipazzi.github.io/riconquistalatuaex/logo-riconquista.png" alt="Logo La Riconquista" class="image-rect" />
+      <p>
+        Ciao, sono Carlo Zimbone. Dopo anni di esperienza personale e professionale nello studio delle dinamiche relazionali e della psicologia della riconquista, ho deciso di mettere a disposizione questa guida pratica e senza fronzoli per aiutarti a tornare con la tua ex — o a chiudere definitivamente con consapevolezza.
+      </p>
+      <p>
+        Qui non troverai teorie astratte o promesse vuote, ma un percorso concreto, basato su strategie collaudate e ricerca scientifica, per riprendere il controllo della tua vita amorosa senza perdere tempo o dignità.
+      </p>
     </section>
 
-    <section id="guida">
+    <section id="guida" aria-label="Descrizione Guida Completa">
       <h2>La Guida Completa</h2>
-      <img class="copertina" src="https://massipazzi.github.io/riconquistalatuaex/copertina-pdf.png" alt="Copertina PDF La Riconquista" />
-      <p>La guida suddivisa in 6 sezioni:</p>
+      <img src="https://massipazzi.github.io/riconquistalatuaex/copertina-pdf.png" alt="Copertina PDF La Riconquista" class="image-rect" />
+      <p>La guida è suddivisa in 6 sezioni:</p>
       <ul>
         <li><strong>Comprendere la rottura</strong></li>
         <li><strong>No Contact Strategico</strong></li>
@@ -188,42 +172,76 @@
       </ul>
     </section>
 
-    <section id="acquisto">
+    <section id="acquisto" aria-label="Acquista la Guida">
       <h2>Acquista la Guida</h2>
       <p><strong>Prezzo:</strong> 3,99 € – Pagamento sicuro con PayPal</p>
 
-      <form>
+      <form id="purchaseForm" onsubmit="return false;">
         <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome" required />
+        <input type="text" id="nome" name="nome" required autocomplete="given-name" />
 
         <label for="cognome">Cognome</label>
-        <input type="text" id="cognome" name="cognome" required />
+        <input type="text" id="cognome" name="cognome" required autocomplete="family-name" />
 
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
+        <input type="email" id="email" name="email" required autocomplete="email" />
       </form>
 
-      <!-- Bottone PayPal -->
-      <div id="paypal-container-EA39S7PZPEUGL"></div>
+      <div id="paypal-button-container"></div>
 
-      <div class="report-problem">
-        <p>Segnala un problema via email a <a href="mailto:wavelinesurfline@gmail.com">wavelinesurfline@gmail.com</a></p>
-      </div>
+      <p style="margin-top:1rem; font-size:0.9rem; color:#555;">
+        Segnala un problema con l'email: <a href="mailto:wavelinesurfline@gmail.com">wavelinesurfline@gmail.com</a>
+      </p>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 La Riconquista – Sig. Carlo Zimbone – Tutti i diritti riservati
+    &copy; 2025 La Riconquista – Sig. Massimiliano Mazzei – Tutti i diritti riservati
   </footer>
 
   <!-- PayPal SDK -->
-  <script 
-    src="https://www.paypal.com/sdk/js?client-id=BAA-FndWkHegW__79TuIQF3dEOyT6e7kM0nAIAwKTm3MKY5XISLwDus81KHvCwyXG8px7H2LTsfFWsDOQI&components=hosted-buttons&disable-funding=venmo&currency=EUR">
-  </script>
+  <script src="https://www.paypal.com/sdk/js?client-id=BAA-FndWkHegW__79TuIQF3dEOyT6e7kM0nAIAwKTm3MKY5XISLwDus81KHvCwyXG8px7H2LTsfFWsDOQI&currency=EUR"></script>
   <script>
-    paypal.HostedButtons({
-      hostedButtonId: "EA39S7PZPEUGL",
-    }).render("#paypal-container-EA39S7PZPEUGL");
+    paypal.Buttons({
+      style: {
+        shape: 'rect',
+        color: 'blue',
+        layout: 'vertical',
+        label: 'pay',
+      },
+      onClick: function(data, actions) {
+        // Verifica che il form sia compilato
+        const nome = document.getElementById('nome').value.trim();
+        const cognome = document.getElementById('cognome').value.trim();
+        const email = document.getElementById('email').value.trim();
+
+        if (!nome || !cognome || !email) {
+          alert('Per favore, compila tutti i campi prima di procedere al pagamento.');
+          return actions.reject();
+        }
+        return actions.resolve();
+      },
+      createOrder: function(data, actions) {
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: '3.99'
+            },
+            description: 'Guida La Riconquista'
+          }]
+        });
+      },
+      onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+          alert('Pagamento completato con successo, ' + details.payer.name.given_name + '!');
+          // Reindirizza al link Drive per il download
+          window.location.href = "https://drive.google.com/file/d/1INOnus1WjNSWaHR2_l97X9JMW-sbRRj5/view?usp=drive_link";
+        });
+      },
+      onError: function(err) {
+        alert('Errore durante il pagamento: ' + err);
+      }
+    }).render('#paypal-button-container');
   </script>
 </body>
 </html>
