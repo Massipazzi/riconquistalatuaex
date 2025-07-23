@@ -27,52 +27,24 @@
   <!-- Favicon -->
   <link rel="icon" href="https://massipazzi.github.io/riconquistalatuaex/favicon.ico" type="image/x-icon" />
 
-  <!-- Schema Markup -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "La Riconquista - Guida per Tornare con la tua Ex",
-    "image": "https://massipazzi.github.io/riconquistalatuaex/copertina-pdf.png",
-    "description": "Una guida completa in PDF che ti accompagna passo dopo passo nel percorso per riconquistare la tua ex.",
-    "brand": {
-      "@type": "Brand",
-      "name": "La Riconquista"
-    },
-    "author": {
-      "@type": "Person",
-      "name": "Massimiliano Mazzei"
-    },
-    "offers": {
-      "@type": "Offer",
-      "url": "https://massipazzi.github.io/riconquistalatuaex/",
-      "priceCurrency": "EUR",
-      "price": "3.99",
-      "availability": "https://schema.org/InStock"
-    }
-  }
-  </script>
-
-  <!-- PayPal SDK -->
-  <script src="https://www.paypal.com/sdk/js?client-id=BAA-FndWkHegW__79TuIQF3dEOyT6e7kM0nAIAwKTm3MKY5XISLwDus81KHvCwyXG8px7H2LTsfFWsDOQI&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
-
   <style>
-    body {
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
       background: #f0f4f8;
       color: #222;
       line-height: 1.6;
-      margin: 0;
-      padding: 0;
     }
     header {
       background: #0056b3;
       color: white;
       padding: 1rem 2rem;
       display: flex;
+      align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      align-items: center;
     }
     header h1 {
       font-size: 1.8rem;
@@ -82,6 +54,7 @@
       text-decoration: none;
       margin-left: 1.5rem;
       font-weight: 600;
+      transition: color 0.3s ease;
     }
     nav a:hover {
       color: #ffcc00;
@@ -105,33 +78,89 @@
       display: inline-block;
       padding-bottom: 0.3rem;
     }
-    .full-width {
+    p {
+      margin-bottom: 1rem;
+    }
+    ul {
+      margin-top: 1rem;
+      line-height: 1.5;
+      list-style-type: disc;
+      padding-left: 1.2rem;
+    }
+    ul li {
+      margin-bottom: 0.8rem;
+    }
+    /* Immagini rettangolari */
+    .logo, .copertina {
       width: 100%;
-      max-height: 300px;
+      max-width: 400px;
+      height: 200px;
       object-fit: cover;
       border-radius: 10px;
       margin-bottom: 1.5rem;
-    }
-    label, input, button {
       display: block;
-      width: 100%;
-      margin-bottom: 1rem;
-      font-size: 1rem;
     }
-    input {
+    form {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+      color: #333;
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
       padding: 0.5rem;
+      margin-bottom: 1rem;
       border: 1px solid #ccc;
       border-radius: 5px;
+      font-size: 1rem;
+    }
+    #paypal-container-EA39S7PZPEUGL {
+      margin-top: 1.5rem;
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
     }
     footer {
       text-align: center;
-      padding: 1.5rem;
+      padding: 1.5rem 1rem;
       background: #222;
       color: #eee;
       font-size: 0.9rem;
     }
-    #paypal-container-EA39S7PZPEUGL {
-      margin-top: 1rem;
+    .segnala-problema {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+      text-align: center;
+    }
+    .segnala-problema a {
+      color: #0056b3;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .segnala-problema a:hover {
+      color: #ffcc00;
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav a {
+        margin-left: 0;
+        margin-right: 1rem;
+        margin-top: 0.5rem;
+      }
+      .logo, .copertina {
+        max-width: 100%;
+        height: auto;
+      }
     }
   </style>
 </head>
@@ -148,14 +177,82 @@
   <main>
     <section id="intro">
       <h2>Chi Siamo</h2>
-      <img src="https://massipazzi.github.io/riconquistalatuaex/logo-riconquista.png" alt="Logo La Riconquista" class="full-width">
-      <p>Ciao, sono Carlo Zimbone. Dopo anni di esperienza personale e professionale nello studio delle dinamiche relazionali e della psicologia della riconquista, ho deciso di mettere a disposizione questa guida pratica e senza fronzoli per aiutarti a tornare con la tua ex — o a chiudere definitivamente con consapevolezza.</p>
+      <img src="https://massipazzi.github.io/riconquistalatuaex/logo-riconquista.png" alt="Logo La Riconquista" class="logo" />
+      <p>
+        Ciao, sono Carlo Zimbone. Dopo anni di esperienza personale e professionale nello studio delle dinamiche relazionali e della psicologia della riconquista, ho deciso di mettere a disposizione questa guida pratica e senza fronzoli per aiutarti a tornare con la tua ex — o a chiudere definitivamente con consapevolezza.
+      </p>
+      <p>
+        Qui non troverai teorie astratte o promesse vuote, ma un percorso concreto, basato su strategie collaudate e ricerca scientifica, per riprendere il controllo della tua vita amorosa senza perdere tempo o dignità.
+      </p>
     </section>
 
     <section id="guida">
       <h2>La Guida Completa</h2>
-      <img src="https://massipazzi.github.io/riconquistalatuaex/copertina-pdf.png" alt="Copertina PDF La Riconquista" class="full-width">
+      <img src="https://massipazzi.github.io/riconquistalatuaex/copertina-pdf.png" alt="Copertina PDF La Riconquista" class="copertina" />
+      <p>La guida è suddivisa in 6 sezioni fondamentali, studiate per accompagnarti passo dopo passo nel processo di riconquista:</p>
       <ul>
-        <li><strong>Comprendere la rottura</strong></li>
-        <li><strong>No Contact Strategico</strong></li>
-        <li><strong>Ricostruzione del Sé</strong></li>
+        <li>
+          <strong>Comprendere la rottura</strong><br />
+          Analisi delle cause e dinamiche della fine della relazione per evitare errori comuni.
+        </li>
+        <li>
+          <strong>No Contact Strategico</strong><br />
+          Tecniche per staccare con efficacia, gestire l’assenza e ricreare desiderio.
+        </li>
+        <li>
+          <strong>Ricostruzione del Sé</strong><br />
+          Miglioramento personale e crescita emotiva per aumentare il proprio valore.
+        </li>
+        <li>
+          <strong>Primo Contatto</strong><br />
+          Come rompere il ghiaccio e instaurare un dialogo positivo senza forzare.
+        </li>
+        <li>
+          <strong>Re-ingaggio & Test</strong><br />
+          Strategie per valutare il reale interesse e mantenere l’attenzione nel tempo.
+        </li>
+        <li>
+          <strong>Decisione Finale</strong><br />
+          Come affrontare la scelta definitiva con consapevolezza, che sia un ritorno o una chiusura.
+        </li>
+      </ul>
+    </section>
+
+    <section id="acquisto">
+      <h2>Acquista la Guida</h2>
+      <p><strong>Prezzo:</strong> 3,99 € – Pagamento sicuro con PayPal</p>
+
+      <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required autocomplete="given-name" />
+
+        <label for="cognome">Cognome</label>
+        <input type="text" id="cognome" name="cognome" required autocomplete="family-name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email" />
+      </form>
+
+      <div id="paypal-container-EA39S7PZPEUGL"></div>
+
+      <div class="segnala-problema">
+        <p>Segnala un problema scrivendo a: <a href="mailto:wavelinesurfline@gmail.com">wavelinesurfline@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 La Riconquista – Sig. Carlo Zimbone – Tutti i diritti riservati
+  </footer>
+
+  <!-- PayPal SDK -->
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=BAA-FndWkHegW__79TuIQF3dEOyT6e7kM0nAIAwKTm3MKY5XISLwDus81KHvCwyXG8px7H2LTsfFWsDOQI&components=hosted-buttons&disable-funding=venmo&currency=EUR"
+  ></script>
+  <script>
+    paypal.HostedButtons({
+      hostedButtonId: "EA39S7PZPEUGL",
+    }).render("#paypal-container-EA39S7PZPEUGL");
+  </script>
+</body>
+</html>
