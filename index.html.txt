@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Riconquista - Guida per tornare con la tua ex</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #0d47a1;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #1565c0;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      background-image: url('https://via.placeholder.com/1200x400?text=La+Riconquista');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      margin-bottom: 2rem;
+    }
+    .card {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    .form input, .form button {
+      padding: 1rem;
+      margin: 0.5rem 0;
+      width: 100%;
+      font-size: 1rem;
+    }
+    .form button {
+      background-color: #0d47a1;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>La Riconquista</h1>
+    <p>La guida definitiva per tornare con la tua ex (senza perdere la dignità)</p>
+  </header>
+  <nav>
+    <a href="#chi-siamo">Chi siamo</a>
+    <a href="#guida">La guida</a>
+    <a href="#acquista">Acquista</a>
+  </nav>
+  <div class="hero"></div>
+
+  <section id="chi-siamo">
+    <div class="card">
+      <h2>Chi siamo</h2>
+      <p>Siamo il <strong>Team Mazzei</strong>, un gruppo di esperti e ricercatori con anni di studio sul comportamento umano, le dinamiche relazionali e le strategie psicologiche per la riconquista amorosa. Il nostro obiettivo? Aiutarti a riconnetterti con la persona che ami davvero, evitando gli errori più comuni che distruggono ogni possibilità.</p>
+    </div>
+  </section>
+
+  <section id="guida">
+    <div class="card">
+      <h2>La guida - "La Riconquista"</h2>
+      <p>Un manuale pratico e psicologico di oltre 100 pagine, suddiviso in capitoli, che ti guiderà passo dopo passo nel tuo percorso di riconquista. Alcuni capitoli:</p>
+      <ul>
+        <li>Cap. 1: Comprendere perché è finita</li>
+        <li>Cap. 2: Strategia No Contact</li>
+        <li>Cap. 3: Come diventare irresistibile</li>
+        <li>Cap. 4: Il ritorno - Quando e come ricontattarla</li>
+        <li>Cap. 5: Errori fatali da evitare</li>
+        <li>Cap. 6: Se non torna: come voltare pagina davvero</li>
+      </ul>
+      <p>È molto più di una guida: è il tuo alleato emotivo e strategico.</p>
+    </div>
+  </section>
+
+  <section id="acquista">
+    <div class="card">
+      <h2>Acquista la guida</h2>
+      <p>Compila il modulo qui sotto per ricevere via email la guida completa <strong>"La Riconquista"</strong> in formato PDF. Dopo il pagamento, riceverai il file entro 24 ore.</p>
+      <form class="form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="massipazzi93@hotmail.it">
+        <input type="hidden" name="item_name" value="Guida La Riconquista - PDF 100 pagine">
+        <input type="hidden" name="amount" value="19.90">
+        <input type="hidden" name="currency_code" value="EUR">
+
+        <label>Nome</label>
+        <input type="text" name="nome" required>
+
+        <label>Cognome</label>
+        <input type="text" name="cognome" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <button type="submit">Acquista ora - €19,90</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Team Mazzei. Tutti i diritti riservati.</p>
+  </footer>
+</body>
+</html>
