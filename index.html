@@ -5,28 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>La Riconquista – Guida Completa per Tornare con la Tua Ex</title>
 
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Guida professionale per riconquistare la tua ex. Scarica il PDF 'La Riconquista' e riprendi il controllo della tua vita sentimentale." />
-  <meta name="keywords" content="riconquista ex, tornare con la ex, no contact, guida relazioni, relazioni finite, ex fidanzata, amore" />
-  <meta name="author" content="Massimiliano Mazzei" />
-  <meta name="robots" content="index, follow" />
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="La Riconquista - Guida per Tornare con la Tua Ex" />
-  <meta property="og:description" content="Scarica la guida PDF definitiva per riconquistare la tua ex. Metodo scientifico, serio e concreto." />
-  <meta property="og:image" content="https://massipazzi.github.io/riconquistalatuaex/copertina-pdf.png" />
-  <meta property="og:url" content="https://massipazzi.github.io/riconquistalatuaex/" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="La Riconquista – Guida Completa per Tornare con la Tua Ex" />
-  <meta name="twitter:description" content="Metodo concreto, scientifico e realistico per riconquistare la tua ex. Scarica subito la guida." />
-  <meta name="twitter:image" content="https://massipazzi.github.io/riconquistalatuaex/copertina-pdf.png" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="https://massipazzi.github.io/riconquistalatuaex/favicon.ico" type="image/x-icon" />
-
   <style>
     * {
       margin: 0; padding: 0; box-sizing: border-box;
@@ -88,7 +66,6 @@
     ul li {
       margin-bottom: 0.5rem;
     }
-    /* Immagini grandi e rettangolari */
     .image-rect {
       width: 100%;
       max-height: 300px;
@@ -187,61 +164,24 @@
         <input type="email" id="email" name="email" required autocomplete="email" />
       </form>
 
-      <div id="paypal-button-container"></div>
-
-      <p style="margin-top:1rem; font-size:0.9rem; color:#555;">
-        Segnala un problema con l'email: <a href="mailto:wavelinesurfline@gmail.com">wavelinesurfline@gmail.com</a>
-      </p>
+      <!-- PayPal Hosted Button -->
+      <div id="paypal-container-EA39S7PZPEUGL"></div>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 La Riconquista – Sig. Massimiliano Mazzei – Tutti i diritti riservati
+    <p>Segnala un problema con l'email: <a href="mailto:wavelinesurfline@gmail.com">wavelinesurfline@gmail.com</a></p>
+    <p>&copy; 2025 La Riconquista – Sig. Massimiliano Mazzei – Tutti i diritti riservati</p>
   </footer>
 
-  <!-- PayPal SDK -->
-  <script src="https://www.paypal.com/sdk/js?client-id=BAA-FndWkHegW__79TuIQF3dEOyT6e7kM0nAIAwKTm3MKY5XISLwDus81KHvCwyXG8px7H2LTsfFWsDOQI&currency=EUR"></script>
+  <!-- PayPal Hosted Buttons SDK -->
+  <script 
+    src="https://www.paypal.com/sdk/js?client-id=BAA-FndWkHegW__79TuIQF3dEOyT6e7kM0nAIAwKTm3MKY5XISLwDus81KHvCwyXG8px7H2LTsfFWsDOQI&components=hosted-buttons&disable-funding=venmo&currency=EUR">
+  </script>
   <script>
-    paypal.Buttons({
-      style: {
-        shape: 'rect',
-        color: 'blue',
-        layout: 'vertical',
-        label: 'pay',
-      },
-      onClick: function(data, actions) {
-        // Verifica che il form sia compilato
-        const nome = document.getElementById('nome').value.trim();
-        const cognome = document.getElementById('cognome').value.trim();
-        const email = document.getElementById('email').value.trim();
-
-        if (!nome || !cognome || !email) {
-          alert('Per favore, compila tutti i campi prima di procedere al pagamento.');
-          return actions.reject();
-        }
-        return actions.resolve();
-      },
-      createOrder: function(data, actions) {
-        return actions.order.create({
-          purchase_units: [{
-            amount: {
-              value: '3.99'
-            },
-            description: 'Guida La Riconquista'
-          }]
-        });
-      },
-      onApprove: function(data, actions) {
-        return actions.order.capture().then(function(details) {
-          alert('Pagamento completato con successo, ' + details.payer.name.given_name + '!');
-          // Reindirizza al link Drive per il download
-          window.location.href = "https://drive.google.com/file/d/1INOnus1WjNSWaHR2_l97X9JMW-sbRRj5/view?usp=drive_link";
-        });
-      },
-      onError: function(err) {
-        alert('Errore durante il pagamento: ' + err);
-      }
-    }).render('#paypal-button-container');
+    paypal.HostedButtons({
+      hostedButtonId: "EA39S7PZPEUGL",
+    }).render("#paypal-container-EA39S7PZPEUGL");
   </script>
 </body>
 </html>
