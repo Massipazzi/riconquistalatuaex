@@ -27,25 +27,52 @@
   <!-- Favicon -->
   <link rel="icon" href="https://massipazzi.github.io/riconquistalatuaex/favicon.ico" type="image/x-icon" />
 
-  <!-- Stili -->
-  <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "La Riconquista - Guida per Tornare con la tua Ex",
+    "image": "https://massipazzi.github.io/riconquistalatuaex/copertina-pdf.png",
+    "description": "Una guida completa in PDF che ti accompagna passo dopo passo nel percorso per riconquistare la tua ex.",
+    "brand": {
+      "@type": "Brand",
+      "name": "La Riconquista"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Massimiliano Mazzei"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://massipazzi.github.io/riconquistalatuaex/",
+      "priceCurrency": "EUR",
+      "price": "3.99",
+      "availability": "https://schema.org/InStock"
     }
+  }
+  </script>
+
+  <!-- PayPal SDK -->
+  <script src="https://www.paypal.com/sdk/js?client-id=BAA-FndWkHegW__79TuIQF3dEOyT6e7kM0nAIAwKTm3MKY5XISLwDus81KHvCwyXG8px7H2LTsfFWsDOQI&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
+
+  <style>
     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f0f4f8;
       color: #222;
       line-height: 1.6;
+      margin: 0;
+      padding: 0;
     }
     header {
       background: #0056b3;
       color: white;
       padding: 1rem 2rem;
       display: flex;
-      align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
+      align-items: center;
     }
     header h1 {
       font-size: 1.8rem;
@@ -55,7 +82,6 @@
       text-decoration: none;
       margin-left: 1.5rem;
       font-weight: 600;
-      transition: color 0.3s ease;
     }
     nav a:hover {
       color: #ffcc00;
@@ -79,79 +105,34 @@
       display: inline-block;
       padding-bottom: 0.3rem;
     }
-    p {
-      margin-bottom: 1rem;
-    }
-    ul {
-      margin-left: 1.3rem;
-      margin-bottom: 1rem;
-    }
-    ul li {
-      margin-bottom: 0.5rem;
-    }
-    .logo-container {
+    img.full-width {
       width: 100%;
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-    .logo-container img {
-      width: 100%;
-      max-width: 600px;
       height: auto;
-      border-radius: 12px;
-      object-fit: cover;
-      box-shadow: 0 0 10px rgba(0, 86, 179, 0.3);
-    }
-    img.copertina-pdf {
-      width: 100%;
-      max-width: 500px;
-      display: block;
-      margin: 0 auto 1.5rem auto;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      object-fit: cover;
+      aspect-ratio: 3/1;
+      margin-bottom: 1.5rem;
     }
-    form {
-      max-width: 450px;
-      margin: 0 auto 2rem auto;
-    }
-    label {
+    label, input, button {
       display: block;
-      margin-bottom: 0.3rem;
-      font-weight: 600;
-      color: #333;
-    }
-    input[type="text"],
-    input[type="email"] {
       width: 100%;
-      padding: 0.5rem;
       margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
       font-size: 1rem;
     }
-    #paypal-container-EA39S7PZPEUGL {
-      margin-top: 1.5rem;
-      max-width: 450px;
-      margin-left: auto;
-      margin-right: auto;
+    input {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
     }
     footer {
       text-align: center;
-      padding: 1.5rem 1rem;
+      padding: 1.5rem;
       background: #222;
       color: #eee;
       font-size: 0.9rem;
     }
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      nav a {
-        margin-left: 0;
-        margin-right: 1rem;
-        margin-top: 0.5rem;
-      }
+    #paypal-container-EA39S7PZPEUGL {
+      margin-top: 1rem;
     }
   </style>
 </head>
@@ -162,24 +143,19 @@
       <a href="#intro">Chi Siamo</a>
       <a href="#guida">Guida</a>
       <a href="#acquisto">Acquista</a>
-      <a href="#segnala">Segnala Problema</a>
     </nav>
   </header>
 
   <main>
     <section id="intro">
       <h2>Chi Siamo</h2>
-      <div class="logo-container">
-        <img src="https://massipazzi.github.io/riconquistalatuaex/logo-riconquista.png" alt="Logo La Riconquista">
-      </div>
+      <img src="https://massipazzi.github.io/riconquistalatuaex/logo-riconquista.png" alt="Logo La Riconquista" class="full-width">
       <p>Ciao, sono Carlo Zimbone. Dopo anni di esperienza personale e professionale nello studio delle dinamiche relazionali e della psicologia della riconquista, ho deciso di mettere a disposizione questa guida pratica e senza fronzoli per aiutarti a tornare con la tua ex — o a chiudere definitivamente con consapevolezza.</p>
-      <p>Qui non troverai teorie astratte o promesse vuote, ma un percorso concreto, basato su strategie collaudate e ricerca scientifica, per riprendere il controllo della tua vita amorosa senza perdere tempo o dignità.</p>
     </section>
 
     <section id="guida">
       <h2>La Guida Completa</h2>
-      <img src="https://massipazzi.github.io/riconquistalatuaex/copertina-pdf.png" alt="Copertina PDF La Riconquista" class="copertina-pdf">
-      <p>La guida è suddivisa in 6 sezioni:</p>
+      <img src="https://massipazzi.github.io/riconquistalatuaex/copertina-pdf.png" alt="Copertina PDF La Riconquista" class="full-width">
       <ul>
         <li><strong>Comprendere la rottura</strong></li>
         <li><strong>No Contact Strategico</strong></li>
@@ -194,35 +170,37 @@
       <h2>Acquista la Guida</h2>
       <p><strong>Prezzo:</strong> 3,99 € – Pagamento sicuro con PayPal</p>
 
-      <form id="orderForm">
+      <form>
         <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome" required autocomplete="given-name" />
+        <input type="text" id="nome" name="nome" required>
 
         <label for="cognome">Cognome</label>
-        <input type="text" id="cognome" name="cognome" required autocomplete="family-name" />
+        <input type="text" id="cognome" name="cognome" required>
 
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required autocomplete="email" />
+        <input type="email" id="email" name="email" required>
       </form>
 
       <div id="paypal-container-EA39S7PZPEUGL"></div>
-    </section>
-
-    <section id="segnala">
-      <h2>Segnala un Problema</h2>
-      <p>Per problemi o segnalazioni, scrivi a: <a href="mailto:wavelinesurfline@gmail.com">wavelinesurfline@gmail.com</a></p>
+      <p id="download-info" style="display:none; margin-top: 1rem; color: green; font-weight: bold;">Pagamento ricevuto! Ora puoi scaricare la guida.</p>
+      <a id="download-link" href="https://drive.google.com/file/d/1INOnus1WjNSWaHR2_l97X9JMW-sbRRj5/view?usp=drive_link" target="_blank" style="display:none; font-size: 1.1rem; font-weight: 600; color: #0056b3;">📥 Scarica il PDF</a>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 La Riconquista – Sig. Massimiliano Mazzei – Tutti i diritti riservati
+    &copy; 2025 La Riconquista – Sig. Massimiliano Mazzei – Tutti i diritti riservati<br>
+    Segnala un problema: <a href="mailto:wavelinesurfline@gmail.com" style="color: #ffcc00;">wavelinesurfline@gmail.com</a>
   </footer>
 
-  <!-- PayPal SDK -->
-  <script src="https://www.paypal.com/sdk/js?client-id=BAA-FndWkHegW__79TuIQF3dEOyT6e7kM0nAIAwKTm3MKY5XISLwDus81KHvCwyXG8px7H2LTsfFWsDOQI&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
   <script>
     paypal.HostedButtons({
       hostedButtonId: "EA39S7PZPEUGL",
+      onApprove: function(data, actions) {
+        setTimeout(() => {
+          document.getElementById("download-info").style.display = "block";
+          document.getElementById("download-link").style.display = "inline-block";
+        }, 3000);
+      }
     }).render("#paypal-container-EA39S7PZPEUGL");
   </script>
 </body>
