@@ -105,12 +105,11 @@
       display: inline-block;
       padding-bottom: 0.3rem;
     }
-    img.full-width {
+    .full-width {
       width: 100%;
-      height: auto;
-      border-radius: 10px;
+      max-height: 300px;
       object-fit: cover;
-      aspect-ratio: 3/1;
+      border-radius: 10px;
       margin-bottom: 1.5rem;
     }
     label, input, button {
@@ -160,48 +159,3 @@
         <li><strong>Comprendere la rottura</strong></li>
         <li><strong>No Contact Strategico</strong></li>
         <li><strong>Ricostruzione del Sé</strong></li>
-        <li><strong>Primo Contatto</strong></li>
-        <li><strong>Re-ingaggio & Test</strong></li>
-        <li><strong>Decisione Finale</strong></li>
-      </ul>
-    </section>
-
-    <section id="acquisto">
-      <h2>Acquista la Guida</h2>
-      <p><strong>Prezzo:</strong> 3,99 € – Pagamento sicuro con PayPal</p>
-
-      <form>
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome" required>
-
-        <label for="cognome">Cognome</label>
-        <input type="text" id="cognome" name="cognome" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-      </form>
-
-      <div id="paypal-container-EA39S7PZPEUGL"></div>
-      <p id="download-info" style="display:none; margin-top: 1rem; color: green; font-weight: bold;">Pagamento ricevuto! Ora puoi scaricare la guida.</p>
-      <a id="download-link" href="https://drive.google.com/file/d/1INOnus1WjNSWaHR2_l97X9JMW-sbRRj5/view?usp=drive_link" target="_blank" style="display:none; font-size: 1.1rem; font-weight: 600; color: #0056b3;">📥 Scarica il PDF</a>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 La Riconquista – Sig. Massimiliano Mazzei – Tutti i diritti riservati<br>
-    Segnala un problema: <a href="mailto:wavelinesurfline@gmail.com" style="color: #ffcc00;">wavelinesurfline@gmail.com</a>
-  </footer>
-
-  <script>
-    paypal.HostedButtons({
-      hostedButtonId: "EA39S7PZPEUGL",
-      onApprove: function(data, actions) {
-        setTimeout(() => {
-          document.getElementById("download-info").style.display = "block";
-          document.getElementById("download-link").style.display = "inline-block";
-        }, 3000);
-      }
-    }).render("#paypal-container-EA39S7PZPEUGL");
-  </script>
-</body>
-</html>
