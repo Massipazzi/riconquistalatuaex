@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>La Riconquista – Guida Completa per Tornare con la Tua Ex</title>
-
   <style>
     * {
       margin: 0; padding: 0; box-sizing: border-box;
@@ -93,6 +92,39 @@
       border-radius: 5px;
       font-size: 1rem;
     }
+    .checkbox-container {
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+    .checkbox-container input[type="checkbox"] {
+      margin-right: 0.4rem;
+    }
+    #purchaseButton {
+      width: 100%;
+      padding: 0.7rem;
+      background-color: #0056b3;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    #purchaseButton:disabled {
+      background-color: #999;
+      cursor: not-allowed;
+    }
+    .review {
+      background: #f9f9f9;
+      border-left: 4px solid #0056b3;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+    }
+    .review strong {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
     footer {
       text-align: center;
       padding: 1.5rem 1rem;
@@ -111,31 +143,6 @@
         margin-top: 0.5rem;
       }
     }
-    /* checkbox styling */
-    .checkbox-container {
-      margin-bottom: 1rem;
-      font-weight: normal;
-      color: #333;
-      font-size: 0.9rem;
-    }
-    .checkbox-container input[type="checkbox"] {
-      margin-right: 0.5rem;
-    }
-    #purchaseButton {
-      width: 100%;
-      padding: 0.7rem;
-      background-color: #0056b3;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    #purchaseButton:disabled {
-      background-color: #999;
-      cursor: not-allowed;
-    }
   </style>
 </head>
 <body>
@@ -144,62 +151,77 @@
     <nav>
       <a href="#intro">Chi Siamo</a>
       <a href="#guida">Guida</a>
+      <a href="#perche">Perché Acquistare</a>
+      <a href="#recensioni">Recensioni</a>
       <a href="#acquisto">Acquista</a>
     </nav>
   </header>
 
   <main>
-    <section id="intro" aria-label="Chi Siamo">
+    <section id="intro">
       <h2>Chi Siamo</h2>
-      <img src="https://massipazzi.github.io/riconquistalatuaex/logo-riconquista.png" alt="Logo La Riconquista" class="image-rect" />
-      <p>
-        Ciao, sono Carlo Zimbone. Dopo anni di esperienza personale e professionale nello studio delle dinamiche relazionali e della psicologia della riconquista, ho deciso di mettere a disposizione questa guida pratica e senza fronzoli per aiutarti a tornare con la tua ex — o a chiudere definitivamente con consapevolezza.
-      </p>
-      <p>
-        Qui non troverai teorie astratte o promesse vuote, ma un percorso concreto, basato su strategie collaudate e ricerca scientifica, per riprendere il controllo della tua vita amorosa senza perdere tempo o dignità.
-      </p>
+      <img src="logo-riconquista.png" alt="Logo La Riconquista" class="image-rect" />
+      <p>Ciao, sono Carlo Zimbone. Dopo anni di esperienza personale e professionale nello studio delle dinamiche relazionali e della psicologia della riconquista, ho deciso di mettere a disposizione questa guida pratica e senza fronzoli per aiutarti a tornare con la tua ex — o a chiudere definitivamente con consapevolezza.</p>
     </section>
 
-    <section id="guida" aria-label="Descrizione Guida Completa">
+    <section id="guida">
       <h2>La Guida Completa</h2>
-      <img src="https://massipazzi.github.io/riconquistalatuaex/copertina-pdf.png" alt="Copertina PDF La Riconquista" class="image-rect" />
+      <img src="copertina-pdf.png" alt="Copertina PDF" class="image-rect" />
       <p>La guida è suddivisa in 6 sezioni:</p>
       <ul>
-        <li><strong>Comprendere la rottura</strong></li>
-        <li><strong>No Contact Strategico</strong></li>
-        <li><strong>Ricostruzione del Sé</strong></li>
-        <li><strong>Primo Contatto</strong></li>
-        <li><strong>Re-ingaggio & Test</strong></li>
-        <li><strong>Decisione Finale</strong></li>
+        <li>Comprendere la rottura</li>
+        <li>No Contact Strategico</li>
+        <li>Ricostruzione del Sé</li>
+        <li>Primo Contatto</li>
+        <li>Re-ingaggio & Test</li>
+        <li>Decisione Finale</li>
+      </ul>
+      <img src="screenshot1.png" alt="Anteprima guida" class="image-rect" style="filter: blur(2px);" />
+      <img src="screenshot2.png" alt="Anteprima guida 2" class="image-rect" style="filter: blur(2px);" />
+    </section>
+
+    <section id="perche">
+      <h2>Perché Acquistare la Guida</h2>
+      <ul>
+        <li>✅ Basata su casi reali</li>
+        <li>✅ Niente fuffa, solo strategia</li>
+        <li>✅ Accesso immediato dopo il pagamento</li>
       </ul>
     </section>
 
-    <section id="acquisto" aria-label="Acquista la Guida">
+    <section id="recensioni">
+      <h2>Recensioni</h2>
+      <div class="review"><strong>Marco L.</strong> "Grazie a questa guida ho evitato errori fatali. Funziona davvero."</div>
+      <div class="review"><strong>Simone R.</strong> "Scritta benissimo, diretta e concreta. Consiglio al 100%."</div>
+      <div class="review"><strong>Giuseppe P.</strong> "Mi ha aiutato a ritrovare lucidità e migliorare me stesso."</div>
+      <div class="review"><strong>Luca C.</strong> "La parte sul no contact è stata una svolta."</div>
+      <div class="review"><strong>Andrea D.</strong> "Ero scettico ma mi sono ricreduto, davvero utile."</div>
+      <div class="review"><strong>Francesco M.</strong> "Carlo Zimbone va dritto al punto. Niente chiacchiere inutili."</div>
+      <div class="review"><strong>Davide B.</strong> "Mi ha fatto aprire gli occhi su tanti errori che facevo."</div>
+      <div class="review"><strong>Enrico F.</strong> "Vale più di 100 euro, e costa meno di un caffè al giorno."</div>
+      <div class="review"><strong>Matteo V.</strong> "È un supporto vero nei momenti bui."</div>
+      <div class="review"><strong>Alessio T.</strong> "Non è solo per tornare con lei, ma per ritrovare te stesso."</div>
+    </section>
+
+    <section id="acquisto">
       <h2>Acquista la Guida</h2>
       <p><strong>Prezzo:</strong> 3,99 € – Pagamento sicuro con PayPal</p>
-
       <form id="purchaseForm" onsubmit="return false;">
         <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome" required autocomplete="given-name" />
-
+        <input type="text" id="nome" name="nome" required />
         <label for="cognome">Cognome</label>
-        <input type="text" id="cognome" name="cognome" required autocomplete="family-name" />
-
+        <input type="text" id="cognome" name="cognome" required />
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required autocomplete="email" />
-
+        <input type="email" id="email" name="email" required />
         <div class="checkbox-container">
           <input type="checkbox" id="privacyCheckbox" />
           <label for="privacyCheckbox">
             Accetto il trattamento dei dati personali come da
-            <a href="/privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+            <a href="/riconquistalatuaex/privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
           </label>
         </div>
-
         <button type="submit" id="purchaseButton" disabled>Acquista Ora</button>
       </form>
-
-      <!-- PayPal Hosted Button -->
       <div id="paypal-container-EA39S7PZPEUGL"></div>
     </section>
   </main>
@@ -209,19 +231,11 @@
     <p>&copy; 2025 La Riconquista – Sig. Carlo Zimbone – Tutti i diritti riservati</p>
   </footer>
 
-  <!-- PayPal Hosted Buttons SDK -->
-  <script 
-    src="https://www.paypal.com/sdk/js?client-id=BAA-FndWkHegW__79TuIQF3dEOyT6e7kM0nAIAwKTm3MKY5XISLwDus81KHvCwyXG8px7H2LTsfFWsDOQI&components=hosted-buttons&disable-funding=venmo&currency=EUR">
-  </script>
+  <script src="https://www.paypal.com/sdk/js?client-id=BAA-FndWkHegW__79TuIQF3dEOyT6e7kM0nAIAwKTm3MKY5XISLwDus81KHvCwyXG8px7H2LTsfFWsDOQI&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
   <script>
-    paypal.HostedButtons({
-      hostedButtonId: "EA39S7PZPEUGL",
-    }).render("#paypal-container-EA39S7PZPEUGL");
-
-    // Abilita/disabilita bottone acquisto in base checkbox privacy
+    paypal.HostedButtons({ hostedButtonId: "EA39S7PZPEUGL" }).render("#paypal-container-EA39S7PZPEUGL");
     const checkbox = document.getElementById('privacyCheckbox');
     const button = document.getElementById('purchaseButton');
-
     checkbox.addEventListener('change', () => {
       button.disabled = !checkbox.checked;
     });
