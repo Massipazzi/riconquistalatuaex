@@ -127,7 +127,7 @@
       align-items: center;
       gap: 0.5rem;
     }
-    button, #paypal-button {
+    button {
       background-color: #0056b3;
       color: white;
       font-weight: 600;
@@ -263,7 +263,7 @@
         <button type="submit" id="purchaseBtn" disabled>Acquista Ora</button>
       </form>
 
-      <div id="paypal-container-EA39S7PZPEUGL" style="margin-top:1rem;"></div>
+      <div id="paypal-button-container" style="margin-top:1rem;"></div>
     </section>
 
     <section id="recensioni" aria-label="Recensioni">
@@ -288,10 +288,8 @@
     <p>&copy; 2025 La Riconquista – Sig. Carlo Zimbone – Tutti i diritti riservati</p>
   </footer>
 
-  <!-- PayPal Hosted Buttons SDK -->
-  <script
-    src="https://www.paypal.com/sdk/js?client-id=BAA-FndWkHegW__79TuIQF3dEOyT6e7kM0nAIAwKTm3MKY5XISLwDus81KHvCwyXG8px7H2LTsfFWsDOQI&components=hosted-buttons&disable-funding=venmo&currency=EUR">
-  </script>
+  <!-- PayPal SDK -->
+  <script src="https://www.paypal.com/sdk/js?client-id=BAA-FndWkHegW__79TuIQF3dEOyT6e7kM0nAIAwKTm3MKY5XISLwDus81KHvCwyXG8px7H2LTsfFWsDOQI&currency=EUR"></script>
 
   <script>
     // Abilita/disabilita bottone Acquista Ora in base checkbox privacy
@@ -309,14 +307,39 @@
         alert('Compila tutti i campi e accetta la Privacy Policy.');
         return;
       }
-      // Simulo il click su PayPal Hosted Button (o qui puoi implementare tracking)
       alert('Modulo compilato correttamente. Procedi con il pagamento PayPal sotto.');
     });
 
-    // Render PayPal hosted button SEMPRE visibile
-    paypal.HostedButtons({
-      hostedButtonId: "EA39S7PZPEUGL",
-    }).render("#paypal-container-EA39S7PZPEUGL");
+    // PayPal Smart Buttons integration
+    paypal.Buttons({
+      style: {
+        layout: 'vertical',
+        color:  'blue',
+        shape:  'rect',
+        label:  'pay'
+      },
+      createOrder: function(data, actions) {
+        // Crea un ordine con prezzo fisso di 3,99 EUR
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: '3.99'
+            }
+          }]
+        });
+      },
+      onApprove: function(data, actions) {
+        // Quando il pagamento è approvato
+        return actions.order.capture().then(function(details) {
+          alert('Pagamento completato da ' + details.payer.name.given_name + '. Il download partirà ora.');
+          // Forza il download del PDF dal link Dropbox (dl=1)
+          window.location.href = "https://www.dropbox.com/scl/fi/acm2v3su6ie5j8wuzrkjj/La_Riconquista_1.pdf?rlkey=861wslpdq0w5lkaj5bmr04x7x&dl=1";
+        });
+      },
+      onError: function (err) {
+        alert('Errore durante il pagamento: ' + err);
+      }
+    }).render('#paypal-button-container');
 
     // Sezione recensioni con localStorage e recensioni di default
     const reviewForm = document.getElementById('reviewForm');
